@@ -1,0 +1,16 @@
+# Data and secrets
+data/raw/
+data/processed/
+.env
+
+# Python / Jupyter
+__pycache__/
+.ipynb_checkpoints/
+
+# Virtual environment (created inside the project folder)
+Include/
+Lib/
+Scripts/
+share/
+etc/
+pyvenv.cfg
