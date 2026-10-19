@@ -13,6 +13,7 @@ Notes:
 import argparse
 import os
 from pathlib import Path
+from dotenv import load_dotenv
 
 import pandas as pd
 from entsoe import EntsoePandasClient
@@ -56,6 +57,7 @@ def main():
     p.add_argument("--end", default="2025-12-31")
     args = p.parse_args()
 
+    load_dotenv()
     key = os.environ.get("ENTSOE_API_KEY")
     if not key:
         raise SystemExit("Set ENTSOE_API_KEY first.")

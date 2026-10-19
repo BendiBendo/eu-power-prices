@@ -6,3 +6,4 @@ scikit-learn
 entsoe-py
 jupyter
 pyarrow
+python-dotenv
